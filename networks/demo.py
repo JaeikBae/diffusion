@@ -16,7 +16,7 @@ model_file = "../data/v1-5-pruned-emaonly.ckpt"
 models = model_loader.preload_models_from_standard_weights(model_file, DEVICE)
 
 # %%
-# prompt = "A painting of a beautiful sunset over a calm lake"
+prompt = "A painting of a beautiful sunset over a calm lake"
 uncond_prompt = ""
 do_cfg = True
 cfg_scale = 7 # 1~40
@@ -31,9 +31,9 @@ num_inference_steps = 100
 seed = 42
 
 # %%
-prompt = "Make car have a red color and a sporty look."
-image_path = "../images/00017.jpg"
-input_image = Image.open(image_path)
+# prompt = "Make car have a red color and a sporty look."
+# image_path = "../images/00017.jpg"
+# input_image = Image.open(image_path)
 
 # %%
 print("Generating image on device:", DEVICE)
